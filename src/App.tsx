@@ -6,7 +6,7 @@ const App: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      {/* Future routes go here */}
+      {/* Future routes should be inserted here */}
     </Routes>
   );
 };

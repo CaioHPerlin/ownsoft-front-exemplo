@@ -1,7 +1,11 @@
-import React from 'react';
+import HeroSection from '../components/HeroSection';
 
 const LandingPage: React.FC = () => {
-  return <div>Landing Page Example</div>;
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  );
 };
 
 export default LandingPage;
