@@ -5,7 +5,7 @@ import illustration from '../../assets/images/illustration.png';
 
 const IllustrationSection: React.FC = () => {
   return (
-    <section className="relative flex items-center justify-between pl-24 h-[500px] bg-blue-500">
+    <section className="relative flex items-center justify-between pl-24 h-[500px] bg-blue-600">
       {/* Left Side - Text Section */}
       <div className="w-1/3 pl-10">
         {/* Title */}
