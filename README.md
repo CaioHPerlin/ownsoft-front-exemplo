@@ -8,10 +8,6 @@ Este repositório contém a implementação de uma landing page desenvolvida com
 
 Você pode visualizar a aplicação implantada [aqui](https://softown-front-end.vercel.app/).
 
-## Objetivo do Teste
-
-O objetivo deste teste é avaliar suas habilidades em front-end, utilizando TypeScript e frameworks modernos como React, Next.js ou Vite. A landing page foi criada seguindo os critérios de avaliação fornecidos.
-
 ## Requisitos do Sistema
 
 - Utilização de TypeScript ou JavaScript no desenvolvimento.
