@@ -42,7 +42,7 @@ consectetur adipiscing praesent.`,
 
 const Plans = () => {
   return (
-    <main className="flex w-full items-center justify-between pt-8 gap-4">
+    <main className="flex flex-col lg:flex-row w-full items-center justify-between pt-8 gap-8 lg:gap-4">
       <PlanCard plan={plans[0]} onClick={() => console.log('plano', plans[0].title)} />
       <PlanCard plan={plans[1]} onClick={() => console.log('plano', plans[0].title)} selected />
       <PlanCard plan={plans[2]} onClick={() => console.log('plano', plans[0].title)} />

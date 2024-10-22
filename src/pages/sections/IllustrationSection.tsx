@@ -5,9 +5,9 @@ import illustration from '../../assets/images/illustration.png';
 
 const IllustrationSection: React.FC = () => {
   return (
-    <section className="relative flex items-center justify-between pl-24 h-[500px] bg-blue-600">
+    <section className="relative flex flex-col lg:flex-row items-center justify-between py-8 lg:py-0 lg:pl-24 lg:h-[500px] bg-blue-600">
       {/* Left Side - Text Section */}
-      <div className="w-1/3 pl-10">
+      <div className="lg:w-1/3 pl-10">
         {/* Title */}
         <Text.P style="text-white !font-bold py-2 text-lg !text-left">
           Elimine todos papéis do seu escritório.
@@ -32,7 +32,7 @@ const IllustrationSection: React.FC = () => {
       </div>
 
       {/* Right Side - Images Section */}
-      <div className="w-2/3 relative flex justify-center h-full items-center">
+      <div className="hidden lg:flex lg:w-2/3 relative justify-center lg:h-full items-center">
         {/* White Decoration - Positioned Below and Full Height */}
         <img
           src={whiteDecorationImage}

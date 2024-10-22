@@ -2,12 +2,13 @@ import Section from '../../components/Section';
 import Text from '../../components/Text';
 import BulletPoint from '../../components/BulletPoint';
 import thirdScreenshot from '../../assets/images/third.png';
+import Image from '../../components/Image';
 
 const DataSecuritySection: React.FC = () => {
   return (
     <Section dotPlacement={['tr']} blueDots={true} height={600} style=" flex items-center">
-      <div className="flex gap-5 flex-nowrap">
-        <div className="w-2/5 pt-4">
+      <div className="flex flex-col md:flex-row gap-5 md:flex-nowrap">
+        <div className="md:w-2/5 pt-4">
           <Text.P style="text-blue-500 !font-bold py-2 text-lg !text-left">
             Proteja seus dados e garanta a conformidade com as normas jurídicas.
           </Text.P>
@@ -28,7 +29,11 @@ const DataSecuritySection: React.FC = () => {
             description="Tenha a garantia de que seus dados estão seguros com nosso sistema de backup."
           />
         </div>
-        <img className="w-3/5" src={thirdScreenshot} alt="Captura de tela do manejo de tarefas" />
+        <Image
+          className="md:w-3/5"
+          src={thirdScreenshot}
+          alt="Captura de tela do manejo de tarefas"
+        />
       </div>
     </Section>
   );

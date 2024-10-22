@@ -9,6 +9,7 @@ import IllustrationSection from './sections/IllustrationSection';
 import WhatsAppBanner from './sections/WhatsAppBanner';
 import PlansSection from './sections/PlansSection';
 import FAQSection from './sections/FAQSection';
+import Image from '../components/Image';
 
 const LandingPage: React.FC = () => {
   return (
@@ -16,8 +17,8 @@ const LandingPage: React.FC = () => {
       <HeroSection />
 
       {/* First Screenshot Section  */}
-      <Section height={450}>
-        <img className="-mt-32" src={firstScreenshot}></img>
+      <Section>
+        <Image src={firstScreenshot} className="lg:-mt-32" alt="Captura de tela" />
       </Section>
 
       <ProcessOtimizationSection />

@@ -11,7 +11,7 @@ type PlanCardProps = {
 
 const PlanCard: React.FC<PlanCardProps> = ({ plan, onClick, selected }) => {
   return (
-    <div className="relative flex flex-col justify-center text-center border-gray-200 border-2 p-4 py-8 rounded-lg">
+    <div className="relative flex flex-col justify-center text-center border-gray-200 border-2 p-4 md:py-8 rounded-lg">
       {selected && (
         <div className="absolute w-max -top-4 left-1/2 transform -translate-x-1/2 bg-emerald-500 font-light py-1 px-4 rounded text-sm">
           <img src={starIcon} alt="Ícone de estrela" className="inline mr-1" />

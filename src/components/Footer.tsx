@@ -7,13 +7,17 @@ import youtubeLogo from '../assets/images/youtube-icon.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-600 h-[290px] text-white px-40 py-10 flex flex-col justify-center text-center items-center">
-      <img src={footerLogo} alt="Ícone de rodapé da SoftOwn" className="mb-4 h-1/2 w-auto" />
+    <footer className="bg-blue-600 md:h-[290px] text-white md:px-40 py-10 flex flex-col justify-center text-center items-center">
+      <img
+        src={footerLogo}
+        alt="Ícone de rodapé da SoftOwn"
+        className="mb-4 w-1/3 lg:h-1/2 lg:w-auto"
+      />
       <p className="mb-6 text-xl">
         <strong className="font-extrabold">© SoftOwn 2024.</strong> Todos os direitos reservados.
       </p>
       {/* Social Media */}
-      <div className="flex justify-center space-x-6">
+      <div className="flex flex-row justify-center space-x-6">
         {/* Facebook */}
         <a href="#facebook" aria-label="Facebook da SoftOwn">
           <img

@@ -2,6 +2,7 @@ import Section from '../../components/Section';
 import Text from '../../components/Text';
 import BulletPoint from '../../components/BulletPoint';
 import secondScreenshot from '../../assets/images/second.png';
+import Image from '../../components/Image';
 
 const ProcessOtimizationSection: React.FC = () => {
   return (
@@ -12,9 +13,13 @@ const ProcessOtimizationSection: React.FC = () => {
       height={600}
       style="flex items-center"
     >
-      <div className="flex gap-5 flex-nowrap">
-        <img className="w-3/5" src={secondScreenshot} alt="Captura de tela do manejo de tarefas" />
-        <div className="w-2/5 pt-4">
+      <div className="flex flex-col md:flex-row gap-5 md:flex-nowrap">
+        <Image
+          className="md:w-3/5"
+          src={secondScreenshot}
+          alt="Captura de tela da otimização de processos"
+        />
+        <div className="md:w-2/5 pt-4">
           <Text.P style="text-blue-500 !font-bold py-2 text-lg !text-left">
             Foco na otimização de processos
           </Text.P>

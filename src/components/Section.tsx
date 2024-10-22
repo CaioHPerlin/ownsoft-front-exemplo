@@ -1,10 +1,11 @@
 import dotImage from '../assets/images/dots.png';
 import blueDotImage from '../assets/images/dots-blue.png';
+import { useEffect, useState } from 'react';
 
 type DotPlacement = 'tl' | 'tr' | 'bl' | 'br';
 
 type SectionProps = {
-  height?: number;
+  height?: number; // You can pass the height as a prop
   backgroundImage?: string;
   backgroundTint?: 'bg-white' | 'bg-secondary' | string;
   dotPlacement?: DotPlacement[];
@@ -22,6 +23,19 @@ const Section: React.FC<SectionProps> = ({
   style,
   children,
 }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // Workaround on tailwind issue
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const getDotPosition = (pos: DotPlacement): string => {
     switch (pos) {
       case 'tl':
@@ -39,8 +53,11 @@ const Section: React.FC<SectionProps> = ({
 
   return (
     <section
-      className={`relative z-10 py-12 px-40 bg-cover bg-center ${style ? style : ''} text-white`}
-      style={{ backgroundImage: `url(${backgroundImage})`, height: height }}
+      className={`relative z-10 py-8 md:py-12 px-4 md:px-40 bg-cover bg-center ${style || ''} text-white`}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        minHeight: windowWidth >= 1000 ? height : undefined,
+      }}
     >
       {/* Background Tint */}
       {backgroundTint && <div className={`absolute inset-0 ${backgroundTint}`}></div>}
@@ -50,7 +67,7 @@ const Section: React.FC<SectionProps> = ({
         dotPlacement.map(pos => (
           <div
             key={pos}
-            className={`absolute ${getDotPosition(pos)} z-10 w-80 right h-80 bg-contain bg-no-repeat`}
+            className={`absolute ${getDotPosition(pos)} z-10 w-32 h-32 md:w-80 md:h-80 bg-contain bg-no-repeat`}
             style={{
               backgroundImage: `url('${blueDots ? blueDotImage : dotImage}')`,
             }}

@@ -4,6 +4,7 @@ import logoImage from '../../assets/images/logo-white.png';
 import Section from '../../components/Section';
 import Button from '../../components/Button';
 import Text from '../../components/Text';
+import Image from '../../components/Image';
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -20,11 +21,11 @@ const HeroSection = () => {
       dotPlacement={['bl', 'tr']}
     >
       {/* Header */}
-      <header className="flex justify-between items-center h-full">
+      <header className="flex gap-8 lg:gap-0 lg:justify-between lg:flex-row items-center h-full flex-col justify-center">
         <Link to={'/'}>
-          <img src={logoImage} alt="SoftOwn Solutions Logo" className="w-64" />
+          <Image src={logoImage} alt="SoftOwn Solutions Logo" className="w-64" />
         </Link>
-        <Button onClick={handleButtonClick} theme="primary">
+        <Button onClick={handleButtonClick} theme="primary" style="px-16 py-12">
           Acessar o <strong className="font-bold">Sistema</strong>
         </Button>
       </header>
