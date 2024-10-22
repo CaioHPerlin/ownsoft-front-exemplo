@@ -16,7 +16,7 @@ const WhatsAppBanner: React.FC<WhatsAppBannerProps> = ({ backgroundTint, text, s
       <div className="flex flex-col items-center">
         <Text.H1 style="text-blue-600">{text}</Text.H1>
         <Text.P style="text-gray-600 text-lg py-2 font-light">{subText}</Text.P>
-        <Button theme="tertiary" style="font-semibold flex items-center my-4">
+        <Button theme="tertiary" style="font-semibold flex items-center my-8">
           Fale com nosso time de vendas
           <img
             className="inline px-1 pb-1 align-middle"

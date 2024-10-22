@@ -8,6 +8,7 @@ import SchedulingSection from './sections/SchedulingSection';
 import IllustrationSection from './sections/IllustrationSection';
 import WhatsAppBanner from './sections/WhatsAppBanner';
 import PlansSection from './sections/PlansSection';
+import FAQSection from './sections/FAQSection';
 
 const LandingPage: React.FC = () => {
   return (
@@ -33,7 +34,7 @@ const LandingPage: React.FC = () => {
         text={'Nossos Planos'}
         subText={'Encontre o melhor plano de acordo com\na necessidade do seu escritório.'}
       />
-
+      <FAQSection backgroundTint="bg-secondary" />
       <WhatsAppBanner
         backgroundTint="bg-primary"
         text="Agende uma demonstração gratuita"
