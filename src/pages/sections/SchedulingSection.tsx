@@ -10,7 +10,7 @@ const SchedulingSection: React.FC = () => {
       backgroundTint="bg-secondary"
       blueDots={true}
       height={600}
-      verticalAlign="items-center"
+      style="flex items-center"
     >
       <div className="flex gap-5 flex-nowrap">
         <img className="w-3/5" src={secondScreenshot} alt="Captura de tela do manejo de tarefas" />

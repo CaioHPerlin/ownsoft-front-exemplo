@@ -9,7 +9,7 @@ type SectionProps = {
   backgroundTint?: 'bg-white' | 'bg-secondary' | string;
   dotPlacement?: DotPlacement[];
   blueDots?: boolean;
-  verticalAlign?: string;
+  style?: string;
   children?: React.ReactNode;
 };
 
@@ -19,7 +19,7 @@ const Section: React.FC<SectionProps> = ({
   backgroundTint = 'bg-white',
   dotPlacement,
   blueDots = false,
-  verticalAlign,
+  style,
   children,
 }) => {
   const getDotPosition = (pos: DotPlacement): string => {
@@ -39,7 +39,7 @@ const Section: React.FC<SectionProps> = ({
 
   return (
     <section
-      className={`relative z-10 py-12 px-48 bg-cover bg-center ${verticalAlign ? `flex ${verticalAlign}` : ''} text-white`}
+      className={`relative z-10 py-12 px-48 bg-cover bg-center ${style ? style : ''} text-white`}
       style={{ backgroundImage: `url(${backgroundImage})`, height: height }}
     >
       {/* Background Tint */}
@@ -57,7 +57,7 @@ const Section: React.FC<SectionProps> = ({
           ></div>
         ))}
 
-      <div className="relative z-20">{children}</div>
+      <div className="relative w-full z-20">{children}</div>
     </section>
   );
 };

@@ -5,7 +5,7 @@ import thirdScreenshot from '../../assets/images/third.png';
 
 const DataSecuritySection: React.FC = () => {
   return (
-    <Section dotPlacement={['tr']} blueDots={true} height={600} verticalAlign="items-center">
+    <Section dotPlacement={['tr']} blueDots={true} height={600} style=" flex items-center">
       <div className="flex gap-5 flex-nowrap">
         <div className="w-2/5 pt-4">
           <Text.P style="text-blue-500 !font-bold py-2 text-lg !text-left">
