@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# SoftOwn Solutions - Teste de Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição do Projeto
 
-Currently, two official plugins are available:
+Este repositório contém a implementação de uma landing page desenvolvida como parte do teste para a vaga de estágio na SoftOwn Solutions. O projeto foi realizado utilizando **Vite**, **React** e **TypeScript**, com o intuito de demonstrar minhas habilidades em front-end.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Link de Deploy
 
-## Expanding the ESLint configuration
+Você pode visualizar a aplicação implantada [aqui](https://softown-front-end.vercel.app/).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Objetivo do Teste
 
-- Configure the top-level `parserOptions` property like this:
+O objetivo deste teste é avaliar suas habilidades em front-end, utilizando TypeScript e frameworks modernos como React, Next.js ou Vite. A landing page foi criada seguindo os critérios de avaliação fornecidos.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## Requisitos do Sistema
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Utilização de TypeScript ou JavaScript no desenvolvimento.
+- Frameworks permitidos: React, Next.js, Vite ou similar.
+- Estilização utilizando Tailwind CSS ou CSS tradicional.
+- Responsividade: A landing page deve ser responsiva, garantindo uma boa visualização em dispositivos móveis e desktops.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
+## Redes e Contato
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
-```
+Atualmente, estou estudando no curso de TADS (Análise e Desenvolvimento de Sistemas) no IFMS.
