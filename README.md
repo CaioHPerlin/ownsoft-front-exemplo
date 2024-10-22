@@ -15,6 +15,9 @@ Você pode visualizar a aplicação implantada [aqui](https://softown-front-end.
 - Estilização utilizando Tailwind CSS ou CSS tradicional.
 - Responsividade: A landing page deve ser responsiva, garantindo uma boa visualização em dispositivos móveis e desktops.
 
-## Redes e Contato
+## Informações Pessoais
 
-Atualmente, estou estudando no curso de TADS (Análise e Desenvolvimento de Sistemas) no IFMS.
+Atualmente, estou estudando no curso de TADS (Análise e Desenvolvimento de Sistemas) no IFMS. Abaixo seguem minhas redes:
+
+- [Linkedin](https://www.linkedin.com/in/caiohperlin/?)
+- [GitHub](https://github.com/CaioHPerlin/)
