@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    fontFamily: {
+      sans: ['"Montserrat", sans-serif'],
+    },
     extend: {
       colors: {
         'hero-blue': 'rgba(2, 119, 238, 0.88)',

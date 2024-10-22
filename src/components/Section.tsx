@@ -1,13 +1,16 @@
 import dotImage from '../assets/images/dot.png';
+import blueDotImage from '../assets/images/dots-blue.png';
 
 type DotPlacement = 'tl' | 'tr' | 'bl' | 'br';
 
 type SectionProps = {
   height?: number;
   backgroundImage?: string;
-  backgroundTint?: string | 'bg-white' | 'bg-secondary';
+  backgroundTint?: 'bg-white' | 'bg-secondary' | string;
   dotPlacement?: DotPlacement[];
-  children: React.ReactNode;
+  blueDots?: boolean;
+  verticalAlign?: string;
+  children?: React.ReactNode;
 };
 
 const Section: React.FC<SectionProps> = ({
@@ -15,6 +18,8 @@ const Section: React.FC<SectionProps> = ({
   backgroundImage,
   backgroundTint = 'bg-white',
   dotPlacement,
+  blueDots = false,
+  verticalAlign,
   children,
 }) => {
   const getDotPosition = (pos: DotPlacement): string => {
@@ -34,7 +39,7 @@ const Section: React.FC<SectionProps> = ({
 
   return (
     <section
-      className={`relative py-12 px-40 bg-cover bg-center text-white`}
+      className={`relative z-10 py-12 px-48 bg-cover bg-center ${verticalAlign ? `flex ${verticalAlign}` : ''} text-white`}
       style={{ backgroundImage: `url(${backgroundImage})`, height: height }}
     >
       {/* Background Tint */}
@@ -47,12 +52,12 @@ const Section: React.FC<SectionProps> = ({
             key={pos}
             className={`absolute ${getDotPosition(pos)} z-10 w-80 right h-80 bg-contain bg-no-repeat`}
             style={{
-              backgroundImage: `url('${dotImage}')`,
+              backgroundImage: `url('${blueDots ? blueDotImage : dotImage}')`,
             }}
           ></div>
         ))}
 
-      <div className="relative">{children}</div>
+      <div className="relative z-20">{children}</div>
     </section>
   );
 };
