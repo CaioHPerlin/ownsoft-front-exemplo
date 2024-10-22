@@ -1,4 +1,4 @@
-import dotImage from '../assets/images/dot.png';
+import dotImage from '../assets/images/dots.png';
 import blueDotImage from '../assets/images/dots-blue.png';
 
 type DotPlacement = 'tl' | 'tr' | 'bl' | 'br';

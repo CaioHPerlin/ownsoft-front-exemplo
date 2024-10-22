@@ -1,7 +1,7 @@
 import Section from '../../components/Section';
 import Text from '../../components/Text';
 import BulletPoint from '../../components/BulletPoint';
-import secondScreenshot from '../../assets/images/third.png';
+import secondScreenshot from '../../assets/images/second.png';
 
 const SchedulingSection: React.FC = () => {
   return (
@@ -18,25 +18,17 @@ const SchedulingSection: React.FC = () => {
           <Text.P style="text-blue-500 !font-bold py-2 text-lg !text-left">
             Agenda e prontuário de seus pacientes.
           </Text.P>
-          <p className="!text-left text-black font-light text-sm">
+          <p className="text-left text-black font-light text-sm mb-2">
             Explica pro Product Owner que o módulo de recursão paralela corrigiu o bug do JSON
             compilado a partir de proto-buffers.
           </p>
           <BulletPoint
-            title="Organize seus casos:"
-            description="Tenha todos os seus processos em um só lugar, com informações completas e atualizadas."
+            title="Transparência total:"
+            description="A equipe de suporte precisa saber que a compilação final do programa complexificou o merge no parse retroativo do DOM.."
           />
           <BulletPoint
-            title="Automatize tarefas:"
-            description="Elimine tarefas repetitivas e ganhe mais tempo para atender seus clientes."
-          />
-          <BulletPoint
-            title="Melhore a comunicação:"
-            description="Facilite a comunicação com seus clientes e equipe, agilizando o processo."
-          />
-          <BulletPoint
-            title="Gere relatórios personalizados:"
-            description="Tenha insights valiosos sobre o desempenho do seu escritório."
+            title="Colaboração eficiente:"
+            description="Dado o fluxo de dados atual, o módulo de recursão paralela causou a race condition do polimorfismo aplicado nas classes.."
           />
         </div>
       </div>

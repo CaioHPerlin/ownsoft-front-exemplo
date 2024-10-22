@@ -1,7 +1,7 @@
 import Section from '../../components/Section';
 import Text from '../../components/Text';
 import BulletPoint from '../../components/BulletPoint';
-import thirdScreenshot from '../../assets/images/four.png';
+import thirdScreenshot from '../../assets/images/third.png';
 
 const DataSecuritySection: React.FC = () => {
   return (

@@ -1,7 +1,7 @@
 import Section from '../../components/Section';
 import Text from '../../components/Text';
 import BulletPoint from '../../components/BulletPoint';
-import secondScreenshot from '../../assets/images/third.png';
+import secondScreenshot from '../../assets/images/second.png';
 
 const ProcessOtimizationSection: React.FC = () => {
   return (

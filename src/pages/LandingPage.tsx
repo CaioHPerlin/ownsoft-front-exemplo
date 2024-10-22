@@ -5,6 +5,7 @@ import firstScreenshot from '../assets/images/first.png';
 import ProcessOtimizationSection from './sections/ProcessOptimizationSection';
 import DataSecuritySection from './sections/DataSecuritySection';
 import SchedulingSection from './sections/SchedulingSection';
+import IllustrationSection from './sections/IllustrationSection';
 
 const LandingPage: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const LandingPage: React.FC = () => {
       <ProcessOtimizationSection />
       <DataSecuritySection />
       <SchedulingSection />
+      <IllustrationSection />
     </>
   );
 };
