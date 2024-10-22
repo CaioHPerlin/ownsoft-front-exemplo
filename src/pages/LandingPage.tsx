@@ -6,7 +6,8 @@ import ProcessOtimizationSection from './sections/ProcessOptimizationSection';
 import DataSecuritySection from './sections/DataSecuritySection';
 import SchedulingSection from './sections/SchedulingSection';
 import IllustrationSection from './sections/IllustrationSection';
-import WhatsAppBanner from '../components/WhatsAppBanner';
+import WhatsAppBanner from './sections/WhatsAppBanner';
+import PlansSection from './sections/PlansSection';
 
 const LandingPage: React.FC = () => {
   return (
@@ -26,6 +27,11 @@ const LandingPage: React.FC = () => {
         backgroundTint="bg-secondary"
         text="Agende uma demonstração gratuita"
         subText="Entre em contato com nosso time e agende uma demonstração gratuita!"
+      />
+      <PlansSection
+        backgroundTint="bg-primary"
+        text={'Nossos Planos'}
+        subText={'Encontre o melhor plano de acordo com\na necessidade do seu escritório.'}
       />
 
       <WhatsAppBanner

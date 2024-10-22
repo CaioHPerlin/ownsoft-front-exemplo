@@ -39,7 +39,7 @@ const Section: React.FC<SectionProps> = ({
 
   return (
     <section
-      className={`relative z-10 py-12 px-48 bg-cover bg-center ${style ? style : ''} text-white`}
+      className={`relative z-10 py-12 px-40 bg-cover bg-center ${style ? style : ''} text-white`}
       style={{ backgroundImage: `url(${backgroundImage})`, height: height }}
     >
       {/* Background Tint */}
